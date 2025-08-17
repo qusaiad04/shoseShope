@@ -1,0 +1,424 @@
+body 
+{
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+}
+
+.logo 
+{
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 60px;
+}
+
+.shop_name 
+{
+    display: block;
+    text-align: center;
+    font-family: jacques Francois Shadow, Courier, monospace;
+    background-color: #f0f0f0;
+    color: #333;
+    column-gap: 16px;
+    row-gap: 40px;
+    justify-items: center;
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.container 
+{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    row-gap: 40px;
+    justify-items: center;
+}
+        
+.element 
+{
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    padding: 10px;
+    height: 400px;
+}
+
+.element-picture
+{
+    margin: 10px 0;
+    font-size: 1.5em;
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+    color: #333;
+}
+
+.element-info 
+{
+    font-family:'Courier New', Courier, monospace;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.element-info p 
+{
+    margin: 5px 0;
+}
+.element-info p:nth-child(2) 
+{
+    color: rgb(184, 0, 0);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.element-info p:nth-child(3) 
+{
+    color: #888888;
+}
+        
+.search 
+{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.search:focus 
+{
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.element:hover 
+{
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+        
+nav 
+{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a 
+{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav a:hover 
+{
+    text-decoration: underline;
+}
+
+.contact-form [type=text], input[type=email], input[type=tel], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #a7a7a7;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #dd0e0e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover 
+{
+  box-shadow: 2px 2px 5px #a7a7a7;
+}
+.contact-form 
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.search 
+{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e60505;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.addToCart
+{
+    width: 100%;
+    background-color: #dd0e0e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.addToCart:hover 
+{
+    box-shadow: 2px 2px 5px #a7a7a7;
+    background-color: #b00c0c;
+}
+
+.element-info button
+{
+    display: absolute;
+    background-color: #dd0e0e;   
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#shoppingCart
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8f8f8;
+    border: 1px solid #ff0606;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.removeFromCart
+{
+    background-color: #707070;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+/* Responsive Styles */
+
+@media (max-width: 480px)
+{
+    body 
+{
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+}
+
+.logo 
+{
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 60px;
+    width: 80%;
+}
+.welcome
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    font-size: 20px;
+    left: 50%;
+    width: max-content;
+    transform: translateX(-30%);}
+.shop_name 
+{
+    font-family: jacques Francois Shadow, Courier, monospace;
+    color: #333;
+    width:inherit;
+    column-gap: 16px;
+    row-gap: 40px;
+    justify-items: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.container 
+{
+    display: flexbox;
+    column-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    row-gap: 40px;
+    justify-items: center;
+}
+        
+.element 
+{
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    padding: 10px;
+}
+
+.element-picture
+{
+    margin: 10px 0;
+    font-size: 1.5em;
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+    color: #333;
+}
+
+.element-info 
+{
+    font-family:'Courier New', Courier, monospace;
+    color: #333;
+}
+
+.element-info p 
+{
+    margin: 5px 0;
+}
+.element-info p:nth-child(2) 
+{
+    color: rgb(184, 0, 0);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.aboutWebsite
+{
+    color: #333;
+    text-align: center;
+    margin: 20px 10px;
+    font-size: medium;
+}
+
+.joFam
+{
+    color: #333;
+    text-align: center;
+    margin: 20px 10px;
+    font-size: medium;
+}
+.element-info p:nth-child(3) 
+{
+    color: #888888;
+}
+        
+.search 
+{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.search:focus 
+{
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.element:hover 
+{
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+        
+nav 
+{
+    background-color: #333;
+    color: #fff;
+    margin: 16px 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+nav a 
+{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+nav a:hover 
+{
+    text-decoration: underline;
+} 
+
+#shoppingCart
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8f8f8;
+    border: 1px solid #ff0606;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.removeFromCart
+{
+    background-color: #707070;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+}
