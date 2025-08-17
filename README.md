@@ -1,0 +1,1 @@
+This file contains the final project for me in the web design course. Its have a built-in product as a div, and you can add to the cart by press add to cart button. You can review or delete from it, and you can search for a product by name, colour, and price.
